@@ -6,6 +6,9 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 import requests, json, time, os, re
 from collections import defaultdict
+from dotenv import load_dotenv
+
+load_dotenv()
 
 API_KEY   = os.environ.get("EV_API_KEY", "")
 BASE_URL  = "http://apis.data.go.kr/B552584/EvCharger/getChargerInfo"

@@ -6,6 +6,9 @@ import time
 import requests
 import pandas as pd
 from shapely.geometry import Point, shape
+from dotenv import load_dotenv
+
+load_dotenv()
 
 EV_FILE       = os.path.join(os.path.dirname(__file__), "서울시 자치구 읍면동별 연료별 자동차 등록현황(행정동)(26년4월).xlsx")
 CHARGER_EXCEL = os.path.join(os.path.dirname(__file__), "전기차 충전소 설치현황_20260512.xlsx")
